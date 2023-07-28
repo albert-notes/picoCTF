@@ -1,0 +1,3 @@
+It's obviously a morse code, so we can break it directly.
+Get the flag.
+PICOCTF{M0RS3C0D31SFUN3902019519}

@@ -1,0 +1,4 @@
+Use IDA pro and find the password is 549255.
+$ ./bbbbloat
+What's my favorite number? 549255
+picoCTF{cu7_7h3_bl047_695036e3}

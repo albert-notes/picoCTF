@@ -1,0 +1,6 @@
+Do things the same in WebNet0, follow the TLS stream and notice that there's a jpg in it.
+Download it and strings it to get the flag.
+Or directly find it in TLS stream.
+
+$ strings vulture.jpg | grep pico
+picoCTF{honey.roasted.peanuts}

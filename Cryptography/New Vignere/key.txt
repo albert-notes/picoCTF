@@ -1,0 +1,2 @@
+In this challenge, we can notice that the flag is being b16_encoded and shift with the key, so what we can do is to reverse it.
+Firstly, 

@@ -1,0 +1,5 @@
+Use scipy.io to get the values of amplitudes.
+Turn it to a 4bit number and assemble them to get the result.
+The logic is 1000+500*[something]+?
+So reverse it in sol.py and get the flag in the end of the script result.
+picoCTF{mU21C_1s_1337_115155af}

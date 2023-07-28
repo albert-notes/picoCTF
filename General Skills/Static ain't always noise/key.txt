@@ -1,0 +1,16 @@
+Try to execute the ltdis.sh.
+$ ./ltdis.sh
+Attempting disassembly of  ...
+objdump: 'a.out': No such file
+objdump: section '.text' mentioned in a -j option, but not found in any input file
+Disassembly failed!
+Usage: ltdis.sh <program-file>
+Bye!
+So we can use $ ./ltdis.sh static to get something.
+$ ./ltdis.sh static
+Attempting disassembly of static ...
+Disassembly successful! Available at: static.ltdis.x86_64.txt
+Ripping strings from binary with file offsets...
+Any strings found in static have been written to static.ltdis.strings.txt with file offset
+Try to cat static.ltdis.strings.txt and we can see the flag is in it.
+picoCTF{d15a5m_t34s3r_ccb2b43e}

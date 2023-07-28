@@ -1,0 +1,4 @@
+In the source code, win() function can get the flag.
+And the program can eval your code with () added.
+So we can type 'win' to get the flag.
+picoCTF{4_d14m0nd_1n_7h3_r0ugh_6e04440d}

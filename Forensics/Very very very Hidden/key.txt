@@ -1,0 +1,27 @@
+There are two pngs in the pcap, so use export to get them. duck.png and evil_duck.png.
+And we can find that the user have visited lots of websites. One is powershell.com
+Search for powershell stego and we can find the tool https://github.com/PCsXcetra/Decode_PS_Stego
+Use it and get the powershell code.
+
+Output:
+$out = "flag.txt"
+$enc = [system.Text.Encoding]::UTF8
+$string1 = "HEYWherE(IS_tNE)50uP?^DId_YOu(]E@t*mY_3RD()B2g3l?"
+$string2 = "8,:8+14>Fx0l+$*KjVD>[o*.;+1|*[n&2G^201l&,Mv+_'T_B"
+
+$data1 = $enc.GetBytes($string1)
+$bytes = $enc.GetBytes($string2)
+
+for($i=0; $i -lt $bytes.count ; $i++)
+{
+    $bytes[$i] = $bytes[$i] -bxor $data1[$i]
+}
+[System.IO.File]::WriteAllBytes("$out", $bytes)
+
+It's simple xor, use python to solve it.
+$ python3
+>>> from pwn import *
+>>> string1 = "HEYWherE(IS_tNE)50uP?^DId_YOu(]E@t*mY_3RD()B2g3l?"
+>>> string2 = "8,:8+14>Fx0l+$*KjVD>[o*.;+1|*[n&2G^201l&,Mv+_'T_B"
+>>> xor(string1,string2)
+b'picoCTF{n1c3_job_f1nd1ng_th3_s3cr3t_in_the_im@g3}'

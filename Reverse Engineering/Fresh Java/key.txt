@@ -1,0 +1,4 @@
+It's a .class file, which is Java compiled.
+But Java can be easily decompile, so use http://www.javadecompilers.com/ to decompile.
+Get the source code, and do some modification in the sol.py to get the flag.
+picoCTF{700l1ng_r3qu1r3d_9332a6be}

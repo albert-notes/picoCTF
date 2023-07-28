@@ -1,0 +1,3 @@
+Open in wireshark, follow the TCP stream and remove the whitespaces.
+Get the flag.
+picoCTF{p4ck37_5h4rk_b9d53765}

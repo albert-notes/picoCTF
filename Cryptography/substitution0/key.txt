@@ -1,0 +1,2 @@
+It's just a substitution cipher, use https://www.quipqiup.com/ and we can get the flag in the end.
+picoCTF{5UB5717U710N_3V0LU710N_03055505}

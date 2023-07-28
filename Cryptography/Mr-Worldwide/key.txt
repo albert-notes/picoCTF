@@ -1,0 +1,4 @@
+The message looks like the longitude and the latitude.
+So we enter it to the Google Map and take out the first alphabet of the region.
+Get the flag.
+picoCTF{KODIAK_ALASKA}

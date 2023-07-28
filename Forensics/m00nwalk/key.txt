@@ -1,0 +1,10 @@
+Use qsstv to solve this problem.
+Firstly, install qsstv by "apt-get install qsstv"
+Then run "pactl load-module module-null-sink sink_name=virtual-cable"
+Run "pavucontrol" to check if there's a null output.
+Run qsstv and go to Options>Configuration>Sound and select PulseAudio.
+Then back to pavucontrol, select Recording tab and check if the qsstv is caputured by null output.
+And notice the hint "What is the CMU mascot?".
+The answer is Scotty the Scottie Dog, so we should select Scottie 1 as qsstv's mode.
+Run "paplay -d virtual-cable message.wav" to get the flag.
+picoCTF{beep_boop_im_in_space}

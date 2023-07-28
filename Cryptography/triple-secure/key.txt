@@ -1,0 +1,14 @@
+It's a simple RSA problem.
+Through the python code, we know:
+n1 = p * q
+n2 = p * r
+n3 = q * r
+so n1 * n2 * n3 = (p * q * r)^2
+And we can calculate:
+p = sqrt(n1 * n2 * n3) / n3
+q = sqrt(n1 * n2 * n3) / n2
+r = sqrt(n1 * n2 * n3) / n1
+And we can solve it.
+In sol.py.
+Get the flag.
+picoCTF{1_gu3ss_tr1pl3_rs4_1snt_tr1pl3_s3cur3!!!!!!}

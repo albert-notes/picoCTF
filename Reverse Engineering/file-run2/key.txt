@@ -1,0 +1,3 @@
+As the description, run it with argument "Hello!".
+$ ./run Hello!
+The flag is: picoCTF{F1r57_4rgum3n7_96f2195f}

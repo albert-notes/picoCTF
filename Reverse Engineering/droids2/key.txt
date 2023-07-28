@@ -1,0 +1,6 @@
+Use jadx to open the two.apk.
+In FlagstaffHill, we can see the get_flag function.
+Its logic shows us the password is.
+Password: dismass.ogg.weatherwax.aching.nitt.garlick
+Get the flag.
+picoCTF{what.is.your.favourite.colour}

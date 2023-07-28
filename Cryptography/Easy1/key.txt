@@ -1,0 +1,2 @@
+The table is for vigenere cipher, so just decode it and get the flag.
+picoCTF{CRYPTOISFUN}

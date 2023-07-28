@@ -1,0 +1,6 @@
+In this challenge, we can notice that the machine will return the length of decryption to us.
+And if we send a correct character in the flag, the length won't be changed!
+So we can use this vulnerability to solve this question.
+Use python code to solve it, in sol.py.
+Get the flag.
+picoCTF{sheriff_you_solved_the_crime}

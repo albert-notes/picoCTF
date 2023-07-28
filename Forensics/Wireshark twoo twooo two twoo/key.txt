@@ -1,0 +1,6 @@
+Use wireshark and enter filter "dns", we can notice that there are many strings start with something like base64.
+And it has two destinations. 8.8.8.8 and 18.217.1.57 and 8.8.8.8 is a lot.
+But if we use follow tcp stream, there will be many things not flags, so I determine that the destination is 18.217.1.57.
+And use "dns and ip.dst==18.217.1.57" as filter, assemble the prefix of the url and base64 decode to get the flag.
+Use https://apackets.com/ can also achieve this.
+picoCTF{dns_3xf1l_ftw_deadbeef}

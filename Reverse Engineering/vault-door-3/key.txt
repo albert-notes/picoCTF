@@ -1,0 +1,4 @@
+The source code gives us the logic of the flag, so we just need to reverse the logic and we can get the flag.
+In sol.py.
+Get the flag.
+picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_1fb380}

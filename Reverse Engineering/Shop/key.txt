@@ -1,0 +1,29 @@
+The source code didn't exclude the situation of negative numbers, so we can buy negative numbers of things.(XD)
+As below shows:
+$ nc mercury.picoctf.net 42159
+Welcome to the market!
+=====================
+        Item            Price   Count
+(0) Quiet Quiches       10      12
+(1) Average Apple       15      8
+(2) Fruitful Flag       100     1
+(3) Sell an Item
+(4) Exit
+Choose an option:
+0
+How many do you want to buy?
+-12
+You have 160 coins
+        Item            Price   Count
+(0) Quiet Quiches       10      24
+(1) Average Apple       15      8
+(2) Fruitful Flag       100     1
+(3) Sell an Item
+(4) Exit
+Choose an option:
+2
+How many do you want to buy?
+1
+Flag is:  [112 105 99 111 67 84 70 123 98 52 100 95 98 114 111 103 114 97 109 109 101 114 95 55 57 55 98 50 57 50 99 125]
+Get the flag.
+picoCTF{b4d_brogrammer_797b292c}

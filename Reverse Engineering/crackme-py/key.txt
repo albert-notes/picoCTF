@@ -1,0 +1,3 @@
+In the code, it tells you that's ROT47.
+Get the flag from the secret.
+picoCTF{1|\/|_4_p34|\|ut_4593da8a}

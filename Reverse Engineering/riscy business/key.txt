@@ -1,0 +1,3 @@
+Our mission is to find the number of riscy to get the flag.
+In sol.py.
+Get the flag.

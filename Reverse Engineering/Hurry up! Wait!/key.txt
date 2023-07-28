@@ -1,0 +1,12 @@
+Open IDA Pro and open the file.
+We can get into main function and see that there's executing 3 functions.
+call    sub_1D7C
+call    sub_298A
+call    sub_1D52
+Get into sub_298A, and it seems like it's calling the flag.
+But at the head is waiting for a very long time.
+So we can patch it to 0 and execute it to get the flag.
+Before patch: 0x38D7EA4C68000
+After patch: 0x0
+$ ./svchost.exe
+picoCTF{d15a5m_ftw_eab78e4}

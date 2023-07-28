@@ -1,0 +1,6 @@
+We can check the python code and find it is a substitution cipher.
+It gives us a lot of ciphertext to brute force it.
+We can use https://www.quipqiup.com/ to solve it.
+Add the flag.txt and "some" of the study-guide.txt and we can easily get the flag.
+Wrap it with picoCTF{}
+picoCTF{perhaps_the_dog_jumped_over_was_just_tired}

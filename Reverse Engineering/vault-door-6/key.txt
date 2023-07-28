@@ -1,0 +1,4 @@
+It's a simple XOR question.
+Use sol.py to solve it.
+Get the flag.
+picoCTF{n0t_mUcH_h4rD3r_tH4n_x0r_95be5dc}

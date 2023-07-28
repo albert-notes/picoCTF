@@ -1,0 +1,2 @@
+Open in wireshark, follow UDP stream at stream 5 and get the flag.
+picoCTF{StaT31355_636f6e6e}

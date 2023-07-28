@@ -1,0 +1,3 @@
+Use python to untar it. In sol.py.
+Get the flag.
+picoCTF{l0t5_0f_TAR5}

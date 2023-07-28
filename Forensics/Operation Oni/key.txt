@@ -1,0 +1,19 @@
+Because there's something wrong on my edit, so I describe the way to break the challenge.
+Use fls to see the disk's second linux system and enter the root file.
+There's a ssh file and we can enter it to get the private key.
+Store it in id_ed25519 and use the remote machine's command to get the flag.
+
+$ sudo ssh -i id_ed25519 -p 63032 ctf-player@saturn.picoctf.net
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.13.0-1025-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+Last login: Tue Nov 22 12:38:26 2022 from 127.0.0.1
+ctf-player@challenge:~$ cat flag.txt
+picoCTF{k3y_5l3u7h_af277f77}

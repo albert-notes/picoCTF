@@ -1,0 +1,6 @@
+Strings the file, and we can notice IHDR and IEND.
+It's a PNG file, but it's title has some error, so we use hex editor to fixed it.
+89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52
+We can get the image with totally red.
+Use stegsolve and get the flag.
+picoCTF{w1z4rdry}

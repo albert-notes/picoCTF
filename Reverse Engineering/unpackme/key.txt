@@ -1,0 +1,17 @@
+It's obviously that the file is upx compressed, so use command to decompress it.
+$ upx -d unpackme-upx
+                       Ultimate Packer for eXecutables
+                          Copyright (C) 1996 - 2018
+UPX 3.95        Markus Oberhumer, Laszlo Molnar & John Reiser   Aug 26th 2018
+
+        File size         Ratio      Format      Name
+   --------------------   ------   -----------   -----------
+   1002408 <-    379108   37.82%   linux/amd64   unpackme-upx
+
+Unpacked 1 file.
+
+Then use IDA Pro, find the favorite number in main.
+Get the flag.
+$ ./unpackme-upx
+What's my favorite number? 754635
+picoCTF{up><_m3_f7w_e510a27f}

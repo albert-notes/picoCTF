@@ -1,0 +1,27 @@
+Use IDA Pro to open enter_password.
+In main.checkPassword we can notice that it use a hex string "861836f13e3d627dfa375bdb8389214e" to xor check.
+But the xor string should be in $esp+0x24, so use gdb to find it out.
+
+pwndbg> x/8x $esp+0x4
+0x18441f28:     0x38313638      0x31663633      0x64336533      0x64373236
+0x18441f38:     0x37336166      0x62646235      0x39383338      0x65343132
+pwndbg> x/8x $esp+0x24
+0x18441f48:     0x5d47534a      0x54034541      0x0a5a025d      0x0d455753
+0x18441f58:     0x555d0005      0x0e011054      0x4b575541      0x01465045
+
+So we xor
+3836313833366631336533643632376466613337356264623833383932313465
+and
+4a53475d414503545d025a0a5357450d05005d555410010e4155574b45504601
+in hex, and we get the password "reverseengineericanbarelyforward"
+Enter it in nc and it ask us what's the unhash of "861836f13e3d627dfa375bdb8389214e".
+It's "goldfish", we can get it on the website.
+Get the flag.
+
+$ nc mercury.picoctf.net 48728
+Enter Password: reverseengineericanbarelyforward
+=========================================
+This challenge is interrupted by psociety
+What is the unhashed key?
+goldfish
+Flag is:  picoCTF{p1kap1ka_p1c0b187f1db}

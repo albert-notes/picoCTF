@@ -1,0 +1,4 @@
+Netcat.
+It's a md5 challenge, so we use python to solve it, in sol.py.
+Get the flag.
+picoCTF{4ppl1c4710n_r3c31v3d_bf2ceb02}

@@ -1,0 +1,16 @@
+Firstly compile the chall.S to ELF.
+$ gcc -g chall.S -o chall
+Then try to run it.
+$ ./chall
+asd
+Correct! You entered the flag.
+What? asd is obviously not the flag...
+Use ltrace to see what's going on.
+$ ltrace ./chall
+...
+strlen("\024\266gp\232\020l9\360\220YI\261\032\3522\376\3100\322\227\250\232\320\v}\017\260\204{","...) = 49
+memcmp(0x7ffc4eec8540, 0x7ffc4eec8500, 49, 0x7ffc4eec8500)                                       = 0xfffffff1
+puts("Correct! You entered the flag."Correct! You entered the flag.
+It uses memcmp, seems to compare our flag with the real flag.
+So use gdb(with pwndbg) and set breakpoint at memcmp, get the flag.
+picoCTF{dyn4m1c_4n4ly1s_1s_5up3r_us3ful_14bfa700}

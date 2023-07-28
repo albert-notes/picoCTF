@@ -1,0 +1,2 @@
+It's a substitution cipher, use https://www.quipqiup.com/ and get the flag.
+frequency_is_c_over_lambda_ogfmaunraf

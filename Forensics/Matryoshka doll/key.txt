@@ -1,0 +1,4 @@
+Keep using foremost and unzip to get the flag.
+4 times totally.
+Get the flag in flag.txt.
+picoCTF{336cf6d51c9d9774fd37196c1d7320ff}

@@ -1,0 +1,7 @@
+Samely, compile it to ELF.
+And it required a integer to input, it will give you win or lose.
+So I use a python code to brute force it.
+(Actually can be determined by view assembly.:P)
+Get the number is 3370.
+Turn it to hex and get the flag.
+picoCTF{00000d2a}

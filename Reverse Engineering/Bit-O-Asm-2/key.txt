@@ -1,0 +1,14 @@
+Also take a look on the txt.
+
+<+0>:     endbr64
+<+4>:     push   rbp
+<+5>:     mov    rbp,rsp
+<+8>:     mov    DWORD PTR [rbp-0x14],edi
+<+11>:    mov    QWORD PTR [rbp-0x20],rsi
+<+15>:    mov    DWORD PTR [rbp-0x4],0x9fe1a
+<+22>:    mov    eax,DWORD PTR [rbp-0x4]
+<+25>:    pop    rbp
+<+26>:    ret
+
+The DWORD PTR [rbp-0x4] was assigned with the value 0x9fe1a, and next the eax was assigned with the value of DWORD PTR [rbp-0x4].
+So the final value of eax is 0x9fe1a, so the flag is picoCTF{654874}.

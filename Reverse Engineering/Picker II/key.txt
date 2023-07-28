@@ -1,0 +1,4 @@
+This time, the source code added a filter that we can't directly type 'win'.
+But the eval function is the same, so we can use 'print(open('flag.txt', 'r').read())#'.
+It directly open the flag.txt to read, and we can get the flag.
+picoCTF{f1l73r5_f41l_c0d3_r3f4c70r_m1gh7_5ucc33d_0b5f1131}

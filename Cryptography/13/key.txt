@@ -1,0 +1,2 @@
+Just as the decription, it's ROT13, decode it and get the flag.
+picoCTF{not_too_bad_of_a_problem}

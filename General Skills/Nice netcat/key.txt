@@ -1,0 +1,5 @@
+Just using netcat to connect to the server.
+It gives us a sequence of number, which like ascii numbers.
+So use python to solve it. In sol.py.
+Get the flag.
+picoCTF{g00d_k1tty!_n1c3_k1tty!_d3dfd6df}

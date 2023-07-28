@@ -1,0 +1,4 @@
+Use IDA Pro to reverse, and the flag function is in the main.
+Reverse it in sol.py to get the flag.
+Get the flag.
+picoCTF{r3v3rs37ee84d27}

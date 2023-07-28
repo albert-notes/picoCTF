@@ -1,0 +1,9 @@
+Run it firstly.
+$ python3 fixme2.py
+  File "fixme2.py", line 22
+    if flag = "":
+            ^
+SyntaxError: invalid syntax
+The "=" should be replaced with "==", so do it and run again.
+$ python3 fixme2.py
+That is correct! Here's your flag: picoCTF{3qu4l1ty_n0t_4551gnm3nt_f6a5aefc}

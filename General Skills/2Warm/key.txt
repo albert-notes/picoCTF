@@ -1,0 +1,2 @@
+>>> print('picoCTF{'+str(bin(42))[2:]+'}')
+picoCTF{101010}

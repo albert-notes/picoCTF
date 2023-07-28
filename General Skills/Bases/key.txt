@@ -1,0 +1,5 @@
+It looks like base64 encode, so use this to solve it.
+$ echo -n "bDNhcm5fdGgzX3IwcDM1" | base64 -d
+l3arn_th3_r0p35
+Get the flag.
+picoCTF{l3arn_th3_r0p35}

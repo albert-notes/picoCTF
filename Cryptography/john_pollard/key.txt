@@ -1,0 +1,5 @@
+Firstly, we can import the key by pycryptodome.
+Since its n is small, we can use sage to solve it.
+Use python in sol.py.
+Get the flag.
+picoCTF{73176001,67867967}

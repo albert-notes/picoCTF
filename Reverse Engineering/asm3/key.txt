@@ -1,0 +1,33 @@
+It's a little complex, so compile the code directly.
+test.S:
+.intel_syntax noprefix
+.global asm3
+
+asm3:
+        push   ebp
+        mov    ebp,esp
+        xor    eax,eax
+        mov    ah,BYTE PTR [ebp+0x9]
+        shl    ax,0x10
+        sub    al,BYTE PTR [ebp+0xe]
+        add    ah,BYTE PTR [ebp+0xf]
+        xor    ax,WORD PTR [ebp+0x12]
+        nop
+        pop    ebp
+        ret
+main.c:
+#include <stdio.h>
+
+int asm3(int, int, int);
+
+int main(int argc, char* argv[])
+{
+    printf("0x%x\n", asm3(0xd2c26416,0xe6cf51f0,0xe54409d5));
+    return 0;
+}
+
+$ gcc -masm=intel -m32 -c test.S -o test.o
+$ gcc -m32 -c main.c -o main.o
+$ gcc -m32 test.o main.o -o main
+$ ./main
+0x375

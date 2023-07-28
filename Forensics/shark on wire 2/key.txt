@@ -1,0 +1,7 @@
+Follow the udp stream, we can notice that there's something like flag.
+But it's not.
+So we get to the udp filter and notice that the 22 port has something different.
+In fact, the source port's tail is the flag's ascii.
+Get the flag.
+112 105 99 111 67 84 70 123 112 49 76 76 102 51 114 51 100 95 100 97 116 97 95 118 49 97 95 115 116 51 103 48 125
+picoCTF{p1LLf3r3d_data_v1a_st3g0}

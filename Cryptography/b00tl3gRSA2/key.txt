@@ -1,0 +1,4 @@
+This challenge implied that d is a lot smaller than e, so we can use Weiner's attack to solve it.
+Use python code in sol.py.
+Get the flag.
+picoCTF{bad_1d3a5_2438125}

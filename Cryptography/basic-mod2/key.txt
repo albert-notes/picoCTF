@@ -1,0 +1,4 @@
+The same, do what said in the description.
+In sol.py.
+Get the flag.
+picoCTF{1nv3r53ly_h4rd_dadaacaa}

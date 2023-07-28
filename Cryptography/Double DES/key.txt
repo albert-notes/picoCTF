@@ -1,0 +1,7 @@
+It's a DES question, and it encrypt it twice to make it more complex(?).
+But because it only encrypted twice, so we can use Meet-In-The-Middle attack.
+It's key length is only 6 bytes(HINT), so brute force is easy.
+We can check if the middle message is the same, to check if the number is the key.
+Use python to solve it. In sol.py.
+Get the flag.
+cb120914153b84dbc68fedd574b395f2

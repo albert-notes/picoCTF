@@ -1,0 +1,4 @@
+Just as the hint, we can find out that 'rockstar' is a language to program.
+Use https://codewithrockstar.com/online to decode and get the flag by ascii numbers converter.
+Get the flag.
+picoCTF{rrrocknrn0113r}

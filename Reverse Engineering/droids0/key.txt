@@ -1,0 +1,4 @@
+Open the file with Android Studio emulator and see the Logcat field.
+Firstly, run the program and press the button.
+Search picoCTF{ and get the flag.
+picoCTF{a.moose.once.bit.my.sister}

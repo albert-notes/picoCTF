@@ -1,0 +1,6 @@
+In the new caesar.py, it firstly uses a special base 16 encode then shift it.
+So if we want to decode, we should unshift it then special base 16 decode.
+Because there's only 16 possible answers, so we can brute force to get it.
+Use python to solve it in sol.py.
+Get the flag.
+12 picoCTF{et_tu?_1ac5f3d7920a85610afeb2572831daa8}

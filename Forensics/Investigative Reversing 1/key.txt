@@ -1,0 +1,4 @@
+Open the mystery with IDA Pro, follow the logic and reverse the flag.
+Solve it in sol.py.
+Get the flag.
+picoCTF{An0tha_1_9a47141}

@@ -1,0 +1,7 @@
+In the python code, we can see that it uses 1 secret key firstly, then 5 different random strings to encrypt the flag.
+However, we can't directly check out how many times do the random strings used.
+But XOR has only do or not do, so we only need to check 32 different cases.
+Use python code to brute force the secret key, in sol1.py.
+It seems 'Africa!' is the most possible key.
+So use it to get the flag. In sol.py
+picoCTF{w41t_s0_1_d1dnt_1nv3nt_x0r???}

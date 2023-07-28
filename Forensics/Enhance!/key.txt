@@ -1,0 +1,2 @@
+Concat the flag in the svg file and get the flag.
+picoCTF{3nh4nc3d_24374675}

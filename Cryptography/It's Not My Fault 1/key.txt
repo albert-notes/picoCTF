@@ -1,0 +1,5 @@
+It need to firstly enter a string which meets its regulation. We can brute force to find it.
+And then we can notice that it's p is restricted in 2^20. ed≡1(mod p-1) and Fermat's little theorem, We can get r^(ed)≡r(mod p)
+So r^(ed)-r=kp, and if we choose a number r from (1,N), it has a high possibility to get p=gcd(r^(ed)-r,N)=gcd((r^(ed)-r) mod N,N)
+Use this outcome to brute force and get the flag. In sol.py.
+picoCTF{1_c4n'7_b3l13v3_17'5_n07_f4ul7_4774ck!!!}

@@ -1,0 +1,55 @@
+We can find that the flag has its static part and dynamic part.
+And the dynamic part is extract from hashes, and it has code for us to solve it.
+
+if key[i] != hashlib.sha256(username_trial).hexdigest()[4]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[5]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[3]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[6]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[2]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[7]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[1]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[8]:
+            return False
+
+
+
+        return True
+So we can use python to do it.
+It's username_trial is "GOUGH"
+$ python3
+>>> import hashlib
+>>> a=hashlib.sha256(b"GOUGH").hexdigest()
+>>> a
+'e8a1f9146d32473b9605568ca66f7b5c2db9f271f57a8c8e9e121e48accddf2f'
+>>> a[4]+a[5]+a[3]+a[6]+a[2]+a[7]+a[1]+a[8]
+'f911a486'
+Get the flag.
+picoCTF{1n_7h3_|<3y_of_f911a486}

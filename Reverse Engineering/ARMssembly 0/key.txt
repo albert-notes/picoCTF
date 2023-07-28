@@ -1,0 +1,10 @@
+We can execute the binary by some steps:
+$ sudo apt install binutils-aarch64-linux-gnu gcc-aarch64-linux-gnu
+$ aarch64-linux-gnu-as -o chall.o chall.S
+$ aarch64-linux-gnu-gcc -static -o chall chall.o
+$ sudo apt install qemu-user-static (Run ARM binaries like normal programs)
+Then we can use ./chall to get our output.
+$ ./chall 182476535 3742084308
+Result: 3742084308
+Turn it to hex and get our flag.
+picoCTF{df0bacd4}

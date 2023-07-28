@@ -1,0 +1,85 @@
+Firstly, use apktool to decode the one.apk.
+Run the one.apk in Android Studio and see the Logcat.
+It seem frequently call com.hellocmu.picoctf, so go to the path /one/smali/com/hellocmu/picoctf/.
+FlagstaffHill.smali seems to be strange, take a look on it.
+
+.class public Lcom/hellocmu/picoctf/FlagstaffHill;
+.super Ljava/lang/Object;
+.source "FlagstaffHill.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static native fenugreek(Ljava/lang/String;)Ljava/lang/String;
+.end method
+
+.method public static getFlag(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
+    .locals 2
+    .param p0, "input"    # Ljava/lang/String;
+    .param p1, "ctx"    # Landroid/content/Context;
+
+    .line 11
+    const v0, 0x7f0b002f
+
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 12
+    .local v0, "password":Ljava/lang/String;
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {p0}, Lcom/hellocmu/picoctf/FlagstaffHill;->fenugreek(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    return-object v1
+
+    .line 13
+    :cond_0
+    const-string v1, "NOPE"
+
+    return-object v1
+.end method
+
+See const-string v1, "NOPE"
+It's a function to compare the password! ("NOPE" is the cellphone's output if wrong)
+but we don't know the answer of the password.
+So we can try to grep the password in /one/
+$ grep -iFr "password"
+res/values/public.xml:    <public type="string" name="password" id="0x7f0b002f" />
+res/values/strings.xml:    <string name="password">opossum</string>
+smali/androidx/appcompat/widget/AppCompatTextHelper.smali:    instance-of v9, v9, Landroid/text/method/PasswordTransformationMethod;
+smali/androidx/core/view/accessibility/AccessibilityNodeInfoCompat.smali:.method public isPassword()Z
+smali/androidx/core/view/accessibility/AccessibilityNodeInfoCompat.smali:    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isPassword()Z
+smali/androidx/core/view/accessibility/AccessibilityNodeInfoCompat.smali:.method public setPassword(Z)V
+smali/androidx/core/view/accessibility/AccessibilityNodeInfoCompat.smali:    .param p1, "password"    # Z
+smali/androidx/core/view/accessibility/AccessibilityNodeInfoCompat.smali:    invoke-virtual {v0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setPassword(Z)V
+smali/androidx/core/view/accessibility/AccessibilityNodeInfoCompat.smali:    const-string v2, "; password: "
+smali/androidx/core/view/accessibility/AccessibilityNodeInfoCompat.smali:    invoke-virtual {p0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->isPassword()Z
+smali/androidx/core/view/accessibility/AccessibilityRecordCompat.smali:.method public isPassword()Z
+smali/androidx/core/view/accessibility/AccessibilityRecordCompat.smali:    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityRecord;->isPassword()Z
+smali/androidx/core/view/accessibility/AccessibilityRecordCompat.smali:.method public setPassword(Z)V
+smali/androidx/core/view/accessibility/AccessibilityRecordCompat.smali:    .param p1, "isPassword"    # Z
+smali/androidx/core/view/accessibility/AccessibilityRecordCompat.smali:    invoke-virtual {v0, p1}, Landroid/view/accessibility/AccessibilityRecord;->setPassword(Z)V
+smali/androidx/core/widget/TextViewCompat.smali:    instance-of v0, v0, Landroid/text/method/PasswordTransformationMethod;
+smali/androidx/customview/widget/ExploreByTouchHelper.smali:    invoke-virtual {v1}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->isPassword()Z
+smali/androidx/customview/widget/ExploreByTouchHelper.smali:    invoke-virtual {v0, v2}, Landroid/view/accessibility/AccessibilityEvent;->setPassword(Z)V
+smali/com/hellocmu/picoctf/FlagstaffHill.smali:    .local v0, "password":Ljava/lang/String;
+smali/com/hellocmu/picoctf/R$string.smali:.field public static final password:I = 0x7f0b002f
+
+The password is "opossum"!
+Enter it in the cellphone to get the flag.
+picoCTF{pining.for.the.fjords}

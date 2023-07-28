@@ -1,0 +1,8 @@
+This problem still has password to enter.
+In the source code, we can see where checks if(...)
+And we can easily get the password by correspond it to the "a" string.
+Get the flag by enter the password.
+$ python3 bloat.flag.py
+Please enter correct password for flag: happychance
+Welcome back... your flag, user:
+picoCTF{d30bfu5c4710n_f7w_161a4f09}

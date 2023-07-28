@@ -1,0 +1,4 @@
+The description shows that d is small, so we can use Wiener Attack to solve it.
+Samely, in sol.py.
+Get the flag.
+picoCTF{proving_wiener_1146084}

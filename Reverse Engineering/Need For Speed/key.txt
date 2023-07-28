@@ -1,0 +1,4 @@
+Since the decrypt flag logic is easy, we can do it directly.
+In sol.py.
+Get the flag.
+PICOCTF{Good job keeping bus #24c43740 speeding along!}

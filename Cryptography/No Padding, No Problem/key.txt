@@ -1,0 +1,6 @@
+It uses nc to give us e,n,c and calculate c^d%n, but the can't be orginal c.
+We can bypass it by mathematics.
+Give k=-1, then c->(-c), and e=65537, so c'=n-c, m=n-m'
+Use python to solve it, in sol.py
+Get the flag.
+picoCTF{m4yb3_Th0se_m3s54g3s_4r3_difurrent_5052620}

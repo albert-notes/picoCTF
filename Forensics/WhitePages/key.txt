@@ -1,0 +1,3 @@
+The file gave us lots of unseeable chars, but we can replace them with 1 and 0.
+Then go to ascii decode and get our flag.
+picoCTF{not_all_spaces_are_created_equal_c54f27cd05c2189f8147cc6f5deb2e56}

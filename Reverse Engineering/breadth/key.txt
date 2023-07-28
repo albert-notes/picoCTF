@@ -1,0 +1,42 @@
+Firstly compare two file bytes' difference.
+$ cmp -bl breadth.v1 breadth.v2
+    725 315 M-M  103 C
+    726 120 P    122 R
+    727 141 a    345 M-e
+    728  57 /    327 M-W
+    729  61 1    117 O
+    730 350 M-h  165 u
+    731 223 M-^S 237 M-^_
+    732 150 h    371 M-y
+    733  31 ^Y   234 M-^\
+    734 163 s    127 W
+    735 271 M-9    6 ^F
+    736 220 M-^P  14 ^L
+    737 377 M-^?  53 +
+    738 313 M-K  302 M-B
+    739 307 M-G  337 M-_
+    740 327 M-W   47 '
+    741 270 M-8  121 Q
+    742 250 M-(  247 M-'
+    743 361 M-q  335 M-]
+    744 264 M-4  251 M-)
+ 610380 124 T    104 D
+ 610383 270 M-8  110 H
+ 610384  72 :     75 =
+ 610385 200 M-^@  76 >
+ 610386  67 7    307 M-G
+ 610387 320 M-P   33 ^[
+ 610388 110 H      4 ^D
+ 610389  71 9    164 t
+ 610390 302 M-B   12 ^J
+ 610391 164 t    303 M-C
+ 610392  10 ^H   146 f
+ 610393 303 M-C   17 ^O
+ 610394  17 ^O    37 ^_
+ 610395  37 ^_   204 M-^D
+ 610396 200 M-^@   0 ^@
+2438996  61 1     62 2
+It's difference is mainly at 610380, which is 0x9504c.
+Open IDA Pro to see the address.
+In loc_95060, get the flag.
+picoCTF{VnDB2LUf1VFJkdfDJtdYtFlMexPxXS6X}

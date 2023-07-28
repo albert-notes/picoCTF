@@ -1,0 +1,5 @@
+Compile it and run it.
+$ ./chall_2 4189673334
+Result: 3979085410
+Turn it to hex and get the flag.
+picoCTF{ed2c0662}

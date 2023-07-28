@@ -1,0 +1,4 @@
+As the description, do it and get the flag.
+$ python3 ende.py -d flag.txt.en
+Please enter the password:dbd1bea4dbd1bea4dbd1bea4dbd1bea4(In pw.txt)
+picoCTF{4p0110_1n_7h3_h0us3_dbd1bea4}

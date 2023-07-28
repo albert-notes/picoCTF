@@ -1,0 +1,3 @@
+We can modify the exec() to print() and see the source code.
+The flag is in it.
+picoCTF{175_chr157m45_cd82f94c}

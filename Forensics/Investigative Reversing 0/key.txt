@@ -1,0 +1,4 @@
+In the binary, we can notice there's a flag's rule in it.
+And in the end of mystery.png has something which like the flag.
+So use this to reverse and get the flag. In sol.py.
+picoCTF{f0und_1t_fb51c821}

@@ -1,0 +1,4 @@
+It's a RSA challenge again, and we can notice that it's e is very small(e=3).
+So we can brute force the plaintext by gmpy2. In sol.py.
+Get the flag.
+picoCTF{1_gu3ss_p30pl3_p4d_m3ss4g3s_f0r_4_r34s0n}

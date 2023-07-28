@@ -1,0 +1,8 @@
+Password again, but this time, we should use python to see the exact password.
+>>> chr(0x34) + chr(0x65) + chr(0x63) + chr(0x39)
+'4ec9'
+Then get the flag.
+python3 level2.py
+Please enter correct password for flag: 4ec9
+Welcome back... your flag, user:
+picoCTF{tr45h_51ng1ng_9701e681}

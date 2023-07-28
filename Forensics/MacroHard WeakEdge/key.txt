@@ -1,0 +1,33 @@
+Use binwalk and we can notice that there are lots of files in the ppt.
+And there's a file named "hidden", which is weird.
+So use 7z to extract it.
+$ 7z x Forensics\ is\ fun.pptm
+
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=C.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz (806C1),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 100093 bytes (98 KiB)
+
+Extracting archive: Forensics is fun.pptm
+--
+Path = Forensics is fun.pptm
+Type = zip
+Physical Size = 100093
+
+Everything is Ok
+
+Files: 153
+Size:       237329
+Compressed: 100093
+
+Then find the hidden file.
+$ find ./ -name hidden
+./ppt/slideMasters/hidden
+
+Cat it.
+$ cat ./ppt/slideMasters/hidden
+Z m x h Z z o g c G l j b 0 N U R n t E M W R f d V 9 r b j B 3 X 3 B w d H N f c l 9 6 M X A 1 f Q
+
+Remove the whitespace then base64 decode to get the flag.
+picoCTF{D1d_u_kn0w_ppts_r_z1p5}

@@ -1,0 +1,6 @@
+We can use python to find the password.
+In sol.py
+Password: cvpbPGS{P7e1S_54I35_71Z3}
+Umm... cvpbPGS? It's ROT13...(You should find it out.)
+So get the flag. :P
+picoCTF{C7r1F_54V35_71M3}

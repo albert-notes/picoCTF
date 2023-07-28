@@ -1,0 +1,5 @@
+The pdf file has bash code in it.
+And the flag seems to be encoded by uuencode, so use uudecode to decode it.
+and the flag file is under numerous zips, so use different type of zip due to the file command outcome.
+Get the flag finally.
+picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_79b01c26}

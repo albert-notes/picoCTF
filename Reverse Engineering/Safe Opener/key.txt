@@ -1,0 +1,3 @@
+In the source code, we can find that the key is base64 encoded.
+So use base64 decode and get the flag.
+picoCTF{pl3as3_l3t_m3_1nt0_th3_saf3}

@@ -1,0 +1,3 @@
+It's just as the title and the description said, use rail-fence and 4 rails to decode it and get the flag.
+Wrap it in picoCTF{}
+picoCTF{WH3R3_D035_7H3_F3NC3_8361N_4ND_3ND_83F6D8D7}

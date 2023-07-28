@@ -1,0 +1,19 @@
+Just some converting problems.
+Do it and get the flag.
+$ nc jupiter.challenges.picoctf.org 29221
+Let us see how data is stored
+socket
+Please give the 01110011 01101111 01100011 01101011 01100101 01110100 as a word.
+...
+you have 45 seconds.....
+
+Input:
+socket
+Please give me the  154 141 155 160 as a word.
+Input:
+lamp
+Please give me the 636f6d7075746572 as a word.
+Input:
+computer
+You've beaten the challenge
+Flag: picoCTF{learning_about_converting_values_00a975ff}

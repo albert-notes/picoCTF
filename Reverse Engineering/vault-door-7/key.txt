@@ -1,0 +1,3 @@
+It's a logic of big endian, so use it to get the flag.
+In sol.py.
+picoCTF{A_b1t_0f_b1t_sh1fTiNg_07990cd3b6}

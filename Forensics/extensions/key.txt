@@ -1,0 +1,6 @@
+Try to file the flag.txt.
+$ file flag.txt
+flag.txt: PNG image data, 1697 x 608, 8-bit/color RGB, non-interlaced
+It's a png file, so we change the extension to .png.
+Get the flag in the png.
+picoCTF{now_you_know_about_extensions}

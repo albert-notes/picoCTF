@@ -1,0 +1,25 @@
+Now we have 100 possibilities, so edit the code to try every possible passwords.
+def level_4_pw_check():
+    """
+    user_pw = input("Please enter correct password for flag: ")
+    user_pw_hash = hash_pw(user_pw)
+    
+    if( user_pw_hash == correct_pw_hash ):
+        print("Welcome back... your flag, user:")
+        decryption = str_xor(flag_enc.decode(), user_pw)
+        print(decryption)
+        return
+    print("That password is incorrect")
+    """
+    for i in pos_pw_list:
+        user_pw_hash = hash_pw(i)
+        if( user_pw_hash == correct_pw_hash ):
+            print("Welcome back... your flag, user:")
+            decryption = str_xor(flag_enc.decode(), i)
+            print(decryption)
+            return
+Get the flag.
+$ python3 level4.py
+Welcome back... your flag, user:
+picoCTF{fl45h_5pr1ng1ng_d770d48c}
+

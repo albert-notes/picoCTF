@@ -1,0 +1,4 @@
+Open in wireshark.
+Go to Edit>Preferences>Protocols>TLS and edit the RSA key to add picopico.key.
+There will be HTTP conversation in the wireshark, follow the stream and the flag is in it.
+picoCTF{nongshim.shrimp.crackers}

@@ -1,0 +1,3 @@
+Compile it and use the argument to get the result.
+Get the flag.
+picoCTF{00000039}

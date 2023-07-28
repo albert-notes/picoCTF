@@ -1,0 +1,11 @@
+Use wireshark to open the file and follow tcp stream.
+We can notice that there's a file transfer and the way to decrypt.
+So save the raw data from stream 2 and use the command in stream 0 to decrypt it.
+Get the flag.
+
+$ openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123
+*** WARNING : deprecated key derivation used.
+Using -iter or -pbkdf2 would be better.
+
+$ cat file.txt
+picoCTF{nc_73115_411_dd54ab67}

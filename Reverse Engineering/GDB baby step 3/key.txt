@@ -1,0 +1,12 @@
+This problem is different from other problems above.
+It need to get four bytes of eax, so use gdb to run.
+Use 'ni' until the command with eax.
+
+► 0x40111c       <main+22>                       mov    eax, dword ptr [rbp - 4]      <main>
+
+Then use its hint, type x/4xb $eax
+
+pwndbg> x/4xb $eax
+0x401106 <main>:        0xf3    0x0f    0x1e    0xfa
+
+According to its description, the flag is picoCTF{0xf3f1efa}.

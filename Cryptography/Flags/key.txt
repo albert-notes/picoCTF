@@ -1,0 +1,5 @@
+It has shown in previous pico challenge, it's "International_maritime_signal_flags".
+So we just need to replace the flag with correspnded character to get the flag.
+https://en.wikipedia.org/wiki/International_maritime_signal_flags
+Get the flag.
+PICOCTF{F1AG5AND5TUFF}

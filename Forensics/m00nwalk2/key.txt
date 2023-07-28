@@ -1,0 +1,8 @@
+Use the same tool as m00walk-qsstv and we can get clues from the clue*.wav.
+In the clue1.png, we can a image with password on it.
+And I try steghide and get the flag.
+
+$ steghide extract -sf message.wav -p hidden_stegosaurus
+wrote extracted data to "steganopayload12154.txt".
+$ cat steganopayload12154.txt
+picoCTF{the_answer_lies_hidden_in_plain_sight}

@@ -1,0 +1,3 @@
+Use an online decoder to base64 decode + URL decode.
+Get the flag.
+picoCTF{c0nv3rt1ng_fr0m_ba5e_64_0b957c4f}

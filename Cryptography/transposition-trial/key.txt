@@ -1,0 +1,4 @@
+With observing the position correlation, we can write a code to rebuild it.
+In sol.py.
+Get the flag.
+picoCTF{7R4N5P051N6_15_3XP3N51V3_109AB02E}

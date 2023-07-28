@@ -1,0 +1,4 @@
+There are normal RSA problems. Use python code to solve it.
+In sol.py.
+Get the flag.
+picoCTF{wA8_th4t$_ill3aGal..o26cefcb2}

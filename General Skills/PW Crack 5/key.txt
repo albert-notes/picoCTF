@@ -1,0 +1,27 @@
+Samely, we need to edit the code.
+def level_5_pw_check():
+    """
+    user_pw = input("Please enter correct password for flag: ")
+    user_pw_hash = hash_pw(user_pw)
+    
+    if( user_pw_hash == correct_pw_hash ):
+        print("Welcome back... your flag, user:")
+        decryption = str_xor(flag_enc.decode(), user_pw)
+        print(decryption)
+        return
+    print("That password is incorrect")
+    """
+    with open('dictionary.txt','r') as f:
+        a=list(f.read().split('\n'))
+    
+    for i in a:
+        user_pw_hash = hash_pw(i)
+        if( user_pw_hash == correct_pw_hash ):
+            print("Welcome back... your flag, user:")
+            decryption = str_xor(flag_enc.decode(), i)
+            print(decryption)
+            return
+Get the flag.
+$ python3 level5.py
+Welcome back... your flag, user:
+picoCTF{h45h_sl1ng1ng_36e992a6}

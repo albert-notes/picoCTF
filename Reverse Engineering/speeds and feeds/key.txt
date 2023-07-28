@@ -1,0 +1,3 @@
+It's nc gives us a sequence of code, and the hint is CNC machine, so it's a Gcode problem.
+Use https://ncviewer.com/, type in the code and get the flag.
+picoCTF{num3r1cal_c0ntr0l_f3fea95b}

@@ -1,0 +1,20 @@
+Enter the root file by fls and we can notice that there's a flag.txt.enc and .ash_history.
+.ash_history record the way to encrypt, it uses openssl and the password is given.
+So we also use openssl to decrypt it.
+Save the enc to local.
+
+$ icat -o 411648 disk.flag.img 1782 > flag.txt.enc
+
+Then use openssl to decrypt.
+
+$ openssl aes256 -d -salt -in flag.txt.
+enc -out flag.txt -k unbreakablepassword1234567
+*** WARNING : deprecated key derivation used.
+Using -iter or -pbkdf2 would be better.
+bad decrypt
+140098410906944:error:06065064:digital envelope routines:EVP_DecryptFinal_ex:bad decrypt:../crypto/evp/evp_enc.c:610:
+
+Get the flag.
+
+$ cat flag.txt
+picoCTF{h4un71ng_p457_5113beab}

@@ -1,0 +1,5 @@
+Take a look on the hint, and we can find that it's more than two prime factors.
+So we can factor n easily, since the factors won't be too large.
+Use python and sagemath to solve it in sol.py.
+Get the flag.
+picoCTF{too_many_fact0rs_4025135}

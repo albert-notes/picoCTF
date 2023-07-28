@@ -1,0 +1,4 @@
+It gives a png which contain several numbers, and it represents the index of alphabets.
+Write a python code to solve it, in sol.py.
+Get the flag.
+PICOCTF{THENUMBERSMASON}

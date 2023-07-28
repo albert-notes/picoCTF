@@ -1,0 +1,6 @@
+Check the password list for each and get the flag.
+P.S. Write sol.py is too tired...:P
+$ python3 level3.py
+Please enter correct password for flag: dba8
+Welcome back... your flag, user:
+picoCTF{m45h_fl1ng1ng_cd6ed2eb}

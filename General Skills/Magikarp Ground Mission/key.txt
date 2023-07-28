@@ -1,0 +1,3 @@
+An SSH challenge.
+Do what it calls you to do and get 3 parts of flags.
+picoCTF{xxsh_0ut_0f_\/\/4t3r_21cac893}

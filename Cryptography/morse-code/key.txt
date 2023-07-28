@@ -1,0 +1,4 @@
+It gives a .wav file to use morse decode.
+We can use https://databorder.com/transfer/morse-sound-receiver/ to solve it.
+Then replace " " with "_", wrap it with picoCTF{} and we get the flag.
+picoCTF{WH47_H47H_90D_W20U9H7}

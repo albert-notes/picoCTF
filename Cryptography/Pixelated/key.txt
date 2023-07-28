@@ -1,0 +1,6 @@
+It gives two broken(?) images.
+Obviously, we need to combine them to get some information.
+We can use stegsolve to solve it.
+And in "ADD" mode we find the flag.
+In solved.bmp.
+picoCTF{0542dc1d}

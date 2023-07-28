@@ -1,0 +1,7 @@
+In otp.py, we can notice that the key will cycle, and it's length is 50000.
+The start up used the flag's length to encrypt it.
+So we can deliberately add (50000-flag's length) garbage string to get the key.
+Then use the xor to decrypt it.
+Use sol.py to solve it.
+Get the flag.
+picoCTF{99072996e6f7d397f6ea0128b4517c23}
