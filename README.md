@@ -1,2 +1,2 @@
 # picoCTF
-My Partial Write Up of picoCTF.
+My Write-Ups of picoCTF.
